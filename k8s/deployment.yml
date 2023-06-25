@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: cpu-monitor
-        image: gcr.io/terraform-on-gcp-385407/cpu-monitor-blue:1.0
+        image: gcr.io/[Project ID]/[image]
         resources:
           requests:
             cpu: "100m"
