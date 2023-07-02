@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cpu-monitor
+  name: flask
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: cpu-monitor
+      app: flask
   template:
     metadata:
       labels:
-        app: cpu-monitor
+        app: flask
     spec:
       containers:
-      - name: cpu-monitor
-        image: gcr.io/[Project ID]/[image]
+      - name: flask
+        image: us-central1-docker.pkg.dev/terraform-on-gcp-385407/deploy/flask:1.0
         resources:
           requests:
             cpu: "100m"
