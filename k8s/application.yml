@@ -1,5 +1,4 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Application
+apiVersion: argoproj.io/v1
 metadata:
   name: flask
   namespace: argocd
