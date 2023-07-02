@@ -10,3 +10,10 @@ gcloud container clusters get-credentials cpu-monitoring --zone us-central1-a
 
 
 gcloud builds submit --tag gcr.io/terraform-on-gcp-385407/cpu-monitor:1.1\
+
+
+1. gcloud auth login
+2.gcloud config set project PROJECT ID
+3.gcloud auth configure-docker / in case if use docker for gcloud 
+
+
