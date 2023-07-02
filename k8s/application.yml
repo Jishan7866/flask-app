@@ -6,6 +6,7 @@ spec:
   source:
     repoURL: https://github.com/Jishan7866/flask-app.git
     targetRevision: HEAD
+    path: ./
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: flask
